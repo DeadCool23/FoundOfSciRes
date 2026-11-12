@@ -9,7 +9,6 @@ from numerical_common import create_field
 
 
 def calculate_point(task):
-    # Функция находится в модуле, чтобы её можно было запустить через spawn.
     n, k, intervals, particles, seed, source_function, boundary_function = task
     point_seed = seed + n * (intervals + 1) + k
     generator = random.Random(point_seed)
